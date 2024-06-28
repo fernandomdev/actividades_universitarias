@@ -1,0 +1,65 @@
+/* estilos del login y del register */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
+#title{
+    margin-bottom: 24px;
+}
+.field input, .field select{
+    background: transparent;
+    border: 1px solid #e5e7eb;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.field span{
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+form{
+    border: 1px solid #e5e7eb;
+    padding: 28px;
+    border-radius: 4px;
+    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    width: 390px;
+}
+.field{
+    color: #030712;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+form > button{
+    padding: 8px 12px;
+    width: 100%;
+    background-color: #030712;
+    color: #fff;
+    border-radius: 6px;
+}
+#toggle{
+    color: #272727;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+}
+#toggle button{
+    margin-left: 3px;
+}
+#toggle button:hover{
+    color: #030712;
+    text-decoration: underline !important;
+}
+#message{
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-bottom: 12px;
+}
