@@ -157,6 +157,7 @@ $(document).on("click", "[data-modal-name='delele_form'] .success", function(){
 // =========== Crear o Editar =========== //
 $(document).on("click", "[data-modal-name='main_form'] .success", function(){
 
+    debugger;
     // Validación de datos
     if ( $(".modal input[name='carrera']").val() == '' ) {
         alert('Favor ingrese un título para continuar');
@@ -173,6 +174,7 @@ $(document).on("click", "[data-modal-name='main_form'] .success", function(){
         alert('Favor ingrese una carrera para continuar');
         return false;
     }
+    let type = $(this).closest('.modal').attr('data-modal-type');
     if (type !== 'Editar') { 
         if ( $(".modal input[name='imagen']").val() == '' ) {
             alert('Favor ingrese una imagen para continuar');
@@ -182,7 +184,6 @@ $(document).on("click", "[data-modal-name='main_form'] .success", function(){
 
     // Envío de datos al php
     let form_data = $("[data-modal-name='main_form'] form").serializeArray();
-    let type = $(this).closest('.modal').attr('data-modal-type');
     let carreras = [];
     $(".carrera_container .carrera_selector").each((index, element) => {
         let anios = [];
