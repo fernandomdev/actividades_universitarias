@@ -1,0 +1,108 @@
+/* estilos generales del proyecto, se le aplica a todo */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: inherit;
+    text-decoration: inherit;
+}
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    font-size: inherit;
+}
+
+/* custom alert */
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+body {
+    background: darken(#04B486, 30%);
+    font-family: 'Noto Sans', 'Helvetica';
+}
+
+.customAlert {
+    z-index: 9999;
+    display: none;
+    position: fixed;
+    max-width: 25%;
+    min-width: 250px !important;
+    min-height: 100px;
+    left: 50%;
+    top: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: -12.5%;
+    margin-top: -5.2%;
+    background: #003a79;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    @media all and (max-width: 1300px) {
+        .message {
+            font-size: 14px !important;
+        }
+
+        input[type='button'] {
+            height: 15% !important;
+        }
+    }
+}
+.customAlert .message {
+    padding: 5px;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.customAlert input[type='button'] {
+    cursor: pointer;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 50%;
+    height: 24px !important;
+    margin-top: -45px;
+    margin-left: -25%;
+    outline: 0;
+    border: 0;
+    background: #04B486;
+    color: white;
+
+    &:hover {
+        transition: 0.3s;
+        background: lighten(#04B486, 5%);
+    }
+}
+
+
+.rab {
+    width: 200px;
+    height: 30px;
+    outline: 0;
+    border: 0;
+    color: white;
+    background: darken(#04B486, 5%);
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
